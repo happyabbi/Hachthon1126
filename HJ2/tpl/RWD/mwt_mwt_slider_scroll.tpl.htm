@@ -1,0 +1,101 @@
+
+ <!-- 左側浮動視窗 -->
+
+	<div id="mwt_mwt_slider_scroll">
+
+		 <div  class="mwt_fb_tab">
+			<span>F</span>
+			<span>a</span>
+			<span>c</span>
+			<span>e</span>
+			<span>b</span>
+			<span>o</span>
+			<span>o</span>
+			<span>k</span>	
+		</div>
+
+		<div class="mwt_slider_content">
+			<!--<iframe src="https://www.facebook.com/%E8%B1%90%E5%AF%8C%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-1760152760927069/" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe>-->
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E8%25B1%2590%25E5%25AF%258C%25E7%25A7%2591%25E6%258A%2580%25E8%2582%25A1%25E4%25BB%25BD%25E6%259C%2589%25E9%2599%2590%25E5%2585%25AC%25E5%258F%25B8-1760152760927069%2F&tabs=timeline&width=350&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=181736682199955" width="350" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</div>
+
+		<div class="mwt_fb_tab tab2" >
+			<span>意</span>
+			<span></span>
+			<span>見</span>
+			<span></span>
+			<span>反</span>
+			<span></span>
+			<span>應</span>
+		</div>
+
+		<div class="mwt_slider_content">
+
+				<div class="col-lg-12">			
+
+				<div class="panel panel-warning" style="text-align:left">
+
+					<div class="panel-heading">意見反應</div>
+						<div class="panel-body">
+
+					<form id="form1" name="form1" >
+					<div id="success" ></div>
+						<div class="form-group">
+                                <label>連絡名稱</label>
+                                        <input id="uname" name="uname" class="form-control"  value="">
+                                            <!--<p class="help-block">Meeting title .</p>-->
+						</div>
+						<div class="form-group">
+                                <label>電子信箱 </label>
+                                        <input id="uemail" name="uemail" class="form-control"  value="">
+                                            <!--<p class="help-block">Meeting title .</p>-->
+						</div>
+						<div class="form-group">
+								<label>問題類別</label>	
+									<select id="utype" name="utype" class="form-control" >																														
+										{section name=a loop=$QATYPE}
+										<option value="{$QATYPE[a][1]}" >{$QATYPE[a][0]}</option>
+										{/section}	
+									</select>
+						</div>
+						<div class="form-group">
+                                <label>標題主旨 </label>
+                                        <input id="utitle" name="utitle" class="form-control"  value="">
+                                            <!--<p class="help-block">Meeting title .</p>-->
+						</div>
+						<div class="form-group">
+                                <label>留言內容 </label>
+                                        <textarea id="umessage" name="umessage" class="form-control" rows="3"> </textarea>
+                                            <!--<p class="help-block">Meeting title .</p>-->
+
+						</div>
+						<div class="form-group">
+							<button id="smsg" name="smsg"  class="btn btn-primary">送出</button>
+						</div>
+					</form>
+						Line-ID:<a>skingned</a><br>
+						或掃瞄QRcode
+						<img src="../images/line_qr.jpg" width="100" title="Line ID" alt="Line ID" /><br>
+						</div>
+				</div>			
+
+			</div>
+			<!--<iframe src="http://www.pchome.com.tw" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe>-->
+		</div>
+
+		<div class="mwt_fb_tab tab3" >
+			<span>行</span>
+			<span></span>
+			<span>事</span>
+			<span></span>
+			<span>曆</span>
+			<span></span>
+		</div>
+
+		<div class="mwt_slider_content">
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;hl=zh_TW&amp;bgcolor=%23FFFFFF&amp;src=m5g1csc2vof40ds14l5fia7tno%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Asia%2FTaipei" style="border-width:0" width="355" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+
+
+	</div>
