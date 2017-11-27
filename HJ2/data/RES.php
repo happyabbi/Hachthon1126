@@ -18,7 +18,6 @@ if (!empty($_GET)){
 	$mysqli->query("set names utf8" );	
 	$reg=0.005;
 	$MySql_query="select a.lat,a.lng,a.StopUID,b.Zh_tw as name, '../images/icon/busstop.png' as icon from (select DISTINCT StopUID,lat,lng from od_bsrs where RouteUID ='".$_GET["Type"]."' order by sno) as a left join od_bsstop as b on a.StopUID=b.StopUID";
-	//echo "$MySql_query<br>";
 	if ($result = $mysqli->query($MySql_query)) {
 		while($row = $result->fetch_array(MYSQL_ASSOC)) {
 			foreach($row as $k=> $v){

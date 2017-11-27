@@ -16,22 +16,14 @@ if (!empty($_GET)){
 		exit();
 	}
 	$mysqli->query("set names utf8" );
-	
-	
-	//$MySql_query="select id,Py as lat,Px as lng ,'../images/icon/shintoshrine.png' as icon,name as title,`Add` as addr ,Toldescribe  as content  from od_sscf where `Add` like '%新竹%'";
 				//景點
 			if ($_GET["sscf"]){
-				//$MySql_query ="select name ,Px as lat,Py as lng,picture1,tel,'fa-camera' as type, `Add` as addr, CONCAT('od_sscf@',sno) as id, '../images/icon/shintoshrine.png' as icon from od_sscf where bus=0 and `Add` like '%新竹%'";
 				$MySql_query="select id,Py as lat,Px as lng ,'../images/icon/shintoshrine.png' as icon,name as title,`Add` as addr ,Toldescribe  as content  from od_sscf where bus=0 and `Add` like '%新竹%'";
 			}
-		/*	//活動
-			if ($_GET["ssaf"]){
-				$MySql_query.=" select name ,Px ,Py,picture1,tel,'fa-bullhorn' as type, `Add` as addr,CONCAT('od_ssaf@',sno) as id, '../images/icon/party-2.png' as icon from od_ssaf where (Py between $min_lat and $max_lat) and (Px between $min_lng and $max_lng)";
-			} */
+		
 			//餐廳
 			if ($_GET["ssrf"]){
 				$MySql_query="select id,Py as lat,Px as lng ,'../images/icon/restaurant.png' as icon,name as title,`Add` as addr ,Description  as content  from od_ssrf where bus=0 and `Add` like '%新竹%'";
-				//$MySql_query=" select name ,Px ,Py,picture1,tel,'fa-cutlery' as type, `Add` as addr,CONCAT('od_ssrf@',sno) as id, '../images/icon/restaurant.png' as icon from od_ssrf where bus=0 and `Add` like '%新竹%'";
 			}
 			//新竹縣市旅館
 			if ($_GET["sshf"]){

@@ -17,8 +17,6 @@ if (!empty($_GET)){
 	}
 	$mysqli->query("set names utf8" );
 	
-	//$MySql_query="select id,PositionLat as lat,PositionLon as lng ,'../images/icon/busstop.png' as icon,Zh_tw as title, StopAddress as addr ,'站名'  as content 
-	//			  from od_bsstop ";
 	$MySql_query="select p.id,p.lat,p.lng ,p.icon,p.title, p.addr ,p.content ,p.StopUID,r.Zh_tw as rname
 				  from (select id,PositionLat as lat,PositionLon as lng ,'../images/icon/busstop.png' as icon,Zh_tw as title, StopAddress as addr ,'站名'  as content ,StopUID
 				  from od_bsstop )as p left join od_bsrs as br on p.StopUID=br.StopUID left join od_bsroute as r on br.RouteUID=r.RouteUID";
